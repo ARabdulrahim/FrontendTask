@@ -2,8 +2,8 @@ import React, { useState, useMemo, useCallback, useContext, useEffect } from 're
 import { Plus } from 'lucide-react';
 import Sidebar from './Sidebar';
 import Header from './Header';
-import StrategyTable from './StrategyTable';
-import StrategyModal from './StrategyModal';
+import TaskTable from './TaskTable';
+import TaskModal from './TaskModal';
 import AuthUser from '../../context/AuthUser';
 import { authContext } from '../../context/AuthProvider';
 
@@ -105,7 +105,7 @@ const Dashboard = () => {
           </div>
 
           {/* DATA TABLE */}
-          <StrategyTable 
+          <TaskTable 
             tasks={filteredTasks} 
             onEdit={openEditModal}
             onDelete={deleteTask}
@@ -124,7 +124,7 @@ const Dashboard = () => {
       </main>
 
       {/* CREATE/EDIT OVERLAY */}
-      <StrategyModal 
+      <TaskModal 
         isOpen={isModalOpen} 
         onClose={closeModal} 
         onSave={handleSaveTask} 

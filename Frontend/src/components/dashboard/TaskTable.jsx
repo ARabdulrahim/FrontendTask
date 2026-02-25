@@ -1,7 +1,7 @@
 import React from 'react';
 import { Edit, Trash2 } from 'lucide-react';
 
-const StrategyTable = ({ tasks, onEdit, onDelete }) => {
+const TaskTable = ({ tasks, onEdit, onDelete }) => {
   return (
     <div className="bg-slate-900/40 border border-slate-800 rounded-[2rem] overflow-hidden shadow-2xl">
       <table className="w-full text-left border-collapse">
@@ -41,4 +41,4 @@ const StrategyTable = ({ tasks, onEdit, onDelete }) => {
   );
 };
 
-export default StrategyTable;
+export default TaskTable;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Save } from 'lucide-react';
 
-const StrategyModal = ({ isOpen, onClose, onSave, initialData }) => {
+const TaskModal = ({ isOpen, onClose, onSave, initialData }) => {
   const [formData, setFormData] = useState({ title: '', status: 'Active' });
 
   useEffect(() => {
@@ -60,4 +60,4 @@ const StrategyModal = ({ isOpen, onClose, onSave, initialData }) => {
   );
 };
 
-export default StrategyModal;
+export default TaskModal;
