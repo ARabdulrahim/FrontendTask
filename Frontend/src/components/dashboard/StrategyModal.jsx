@@ -34,7 +34,7 @@ const StrategyModal = ({ isOpen, onClose, onSave, initialData }) => {
               required value={formData.title}
               onChange={(e) => setFormData({...formData, title: e.target.value})}
               className="w-full bg-slate-900 border border-slate-800 rounded-2xl py-4 px-5 text-white focus:border-blue-500 outline-none" 
-              placeholder="e.g. BTC/USDT" 
+              placeholder="e.g. read/teach" 
             />
           </div>
           
